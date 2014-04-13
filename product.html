@@ -336,31 +336,74 @@
 
 
     <div class="container">
+
+
       <div class="row">
-        <div class="col-sm-6 col-md-8 col-md-offset-2">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img class="slide-image" src="images/800x300.gif" alt="">
-                </div>
-                <div class="item">
-                    <img class="slide-image" src="images/800x300.gif" alt="">
-                </div>
-                <div class="item">
-                    <img class="slide-image" src="images/800x300.gif" alt="">
-                </div>
+        <div class="col-sm-6 col-md-10">
+          <ol class="breadcrumb">
+            <li><a href="#">Angady</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Men</a></li>
+            <li class="active">Shirt</li>
+          </ol>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-xs-12 col-md-12">
+                <a href="#" class="thumbnail">
+                  <img data-src="images/300x300" src="images/300x300.gif" alt="...">
+                </a>
+              </div>
             </div>
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
+            <div class="row">
+              <div class="col-xs-6 col-md-4">
+                <a href="#" class="thumbnail">
+                  <img data-src="images/150x150" src="images/150x150.gif" alt="...">
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <a href="#" class="thumbnail">
+                  <img data-src="images/150x150" src="images/150x150.gif" alt="...">
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <a href="#" class="thumbnail">
+                  <img data-src="images/150x150" src="images/150x150.gif" alt="...">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Product</h3>
+            <div class="ratings">
+              <p class="pull-right">15 reviews</p>
+              <p>Rating:&nbsp 
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+              </p>
+            </div>
+            <p>One or two line summary</p>
+            <span>
+               <p class="well well-sm">In Stock &nbsp 
+               <span class="pull-right">Delivery Time: <date>Today 4pm</date></span></p>
+            </span>
+            <div class="input-group">
+              <span class="input-group-addon">#</span>
+              <input type="text" class="form-control" placeholder="Enter Quantity">
+            </div>
+            <br />
+            <h3 class="text-center"><b>Rs.400/- &nbsp</b><small>(inclusive of all taxes)</small></h3>
+            <br />
+            <div class="btn-group btn-group-justified">
+              <div class="btn-group">
+                <button type="button" class="btn btn-info">Add to cart</button>
+              </div>
+            </div>
+            <br />
+            
+
           </div>
         </div> 
         <div class="col-sm-2 col-md-2">
@@ -376,20 +419,130 @@
       <div class="row">
         <div class="col-sm-12 col-md-12">
           <ul class="nav nav-tabs nav-justified">
-            <li class="active"><a href="#featured" data-toggle="tab">Featured</a></li>
-            <li><a href="#new" data-toggle="tab">New</a></li>
+            <li class="active"><a href="#description" data-toggle="tab">Description</a></li>
+            <li><a href="#specification" data-toggle="tab">Specification</a></li>
+             <li><a href="#reviews" data-toggle="tab">Reviews</a></li>
+          </ul>
+
+          <div id='content' class="tab-content">
+            <div class="tab-pane active" id="description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="tab-pane" id="specification">
+              <table class="table">
+                <thead>
+                  <!-- <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                  </tr>-->
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Brand</td>
+                    <td>Panasonic</td>
+                  </tr>
+                  <tr>
+                    <td>Size</td>
+                    <td>21</td>
+                  </tr>
+                  <tr>
+                    <td>Quality</td>
+                    <td>Excellent</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane" id="reviews">
+              <br />
+              <p class="lead">Write a review:</p>
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <p>Rating:&nbsp 
+                      <span class="glyphicon glyphicon-star-empty"></span>
+                      <span class="glyphicon glyphicon-star-empty"></span>
+                      <span class="glyphicon glyphicon-star-empty"></span>
+                      <span class="glyphicon glyphicon-star-empty"></span>
+                      <span class="glyphicon glyphicon-star-empty"></span>
+                    </p>
+                </div>
+                &nbsp 
+                <div class="form-group">
+                  <label class="sr-only" for="heading">Heading</label>
+                  <input type="email" class="form-control" id="heading" placeholder="Enter a heading">
+                </div>
+                &nbsp 
+                <div class="form-group">
+                  <label class="sr-only" for="details">Details</label>
+                  <textarea class="form-control" rows="1"></textarea>
+                </div>
+                &nbsp 
+                <button type="submit" class="btn btn-primary">Submit</button>
+                &nbsp 
+                <button type="button" class="btn btn-primary">Cancel</button>
+              </form>
+              <br />
+              <div>
+                <p class="lead">Aditya &nbsp&nbsp
+                  <small>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  </small>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="lead">Kamal &nbsp&nbsp
+                  <small>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  </small>
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+
+            </div>
+          </div> 
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <ul class="nav nav-tabs nav-justified">
+            <li class="active"><a href="#related" data-toggle="tab">related</a></li>
              <li><a href="#discount" data-toggle="tab">Discount</a></li>
           </ul>
 
           <div id='content' class="tab-content">
-            <div class="tab-pane active" id="featured">
+            <div class="tab-pane active" id="related">
               <div class="row">
                 <div class="col-sm-3 col-lg-3 col-md-3">
                   <div class="thumbnail">
                     <img alt="" src="images/320x150.gif">
                     <div class="caption">
                       <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">Second Product</a>
+                      <h4><a href="#">Second Product</a>
                       </h4>
                       <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -410,7 +563,7 @@
                     <img alt="" src="images/320x150.gif">
                     <div class="caption">
                       <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">Second Product</a>
+                      <h4><a href="#">Second Product</a>
                       </h4>
                       <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -431,7 +584,7 @@
                     <img alt="" src="images/320x150.gif">
                     <div class="caption">
                       <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">Second Product</a>
+                      <h4><a href="#">Second Product</a>
                       </h4>
                       <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -452,7 +605,7 @@
                     <img alt="" src="images/320x150.gif">
                     <div class="caption">
                       <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">Second Product</a>
+                      <h4><a href="#">Second Product</a>
                       </h4>
                       <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -471,94 +624,6 @@
               </div>
             </div>
 
-            <div class="tab-pane" id="new">
-              <div class="row">
-                <div class="col-sm-3 col-lg-3 col-md-3">
-                  <div class="thumbnail">
-                    <img alt="" src="images/320x150.gif">
-                    <div class="caption">
-                      <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">New Product</a>
-                      </h4>
-                      <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="ratings">
-                      <p class="pull-right">15 reviews</p>
-                      <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-lg-3 col-md-3">
-                  <div class="thumbnail">
-                    <img alt="" src="images/320x150.gif">
-                    <div class="caption">
-                      <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">New Product</a>
-                      </h4>
-                      <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="ratings">
-                      <p class="pull-right">15 reviews</p>
-                      <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-lg-3 col-md-3">
-                  <div class="thumbnail">
-                    <img alt="" src="images/320x150.gif">
-                    <div class="caption">
-                      <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">New Product</a>
-                      </h4>
-                      <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="ratings">
-                      <p class="pull-right">15 reviews</p>
-                      <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-lg-3 col-md-3">
-                  <div class="thumbnail">
-                    <img alt="" src="images/320x150.gif">
-                    <div class="caption">
-                      <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">New Product</a>
-                      </h4>
-                      <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="ratings">
-                      <p class="pull-right">15 reviews</p>
-                      <p>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="tab-pane" id="discount">
               <div class="row">
                 <div class="col-sm-3 col-lg-3 col-md-3">
@@ -566,7 +631,7 @@
                     <img alt="" src="images/320x150.gif">
                     <div class="caption">
                       <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">Discount Product</a>
+                      <h4><a href="#">Discount Product</a>
                       </h4>
                       <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -587,7 +652,7 @@
                     <img alt="" src="images/320x150.gif">
                     <div class="caption">
                       <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">Discount Product</a>
+                      <h4><a href="#">Discount Product</a>
                       </h4>
                       <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -608,7 +673,7 @@
                     <img alt="" src="images/320x150.gif">
                     <div class="caption">
                       <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">Discount Product</a>
+                      <h4><a href="#">Discount Product</a>
                       </h4>
                       <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -629,7 +694,7 @@
                     <img alt="" src="images/320x150.gif">
                     <div class="caption">
                       <h4 class="pull-right">$64.99</h4>
-                      <h4><a href="product.html">Discount Product</a>
+                      <h4><a href="#">Discount Product</a>
                       </h4>
                       <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -769,8 +834,8 @@
           $('.navbar .dropdown').hover(function() {
           $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
 
-          // }, function() {
-          // $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+          }, function() {
+          $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
 
           });
 
@@ -778,7 +843,6 @@
           location.href = this.href;
           });
 
-          $('.navbar .dropdown').mouseover();
         });
     </script>
 
