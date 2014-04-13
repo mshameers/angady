@@ -40,6 +40,93 @@ a {
 }
 
 /*  Bootstrap ends */
+
+.tagsinput .tag {
+    background-color: #1ABC9C;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    padding: 2px 8px 4px 15px;
+    position: relative;
+    vertical-align: middle;
+}
+.tagsinput .tag:hover {
+    background-color: #16A085;
+    color: #FFFFFF;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+.tagsinput .tag:hover .tagsinput-remove-link {
+    color: #FFFFFF;
+    opacity: 1;
+}
+.tagsinput input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #34495E;
+    font-family: "Lato",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    margin: 6px 5px 0 0;
+    outline: medium none !important;
+    padding: 0 0 0 5px;
+    vertical-align: top;
+    width: 12px;
+}
+.tagsinput-remove-link {
+    bottom: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 0;
+    padding: 7px 7px 5px 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.tagsinput-remove-link:before {
+    color: #FFFFFF;
+    content: "";
+    font-family: "Flat-UI-Icons";
+}
+.tagsinput-add-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tagsinput-add {
+    background-color: #D6DBDF;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 5px;
+    padding: 7px 9px;
+    vertical-align: top;
+}
+.tagsinput-add:hover {
+    background-color: #1ABC9C;
+}
+.tagsinput-add:before {
+    content: "";
+    font-family: "Flat-UI-Icons";
+}
+.tags_clear {
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+
+
 /*  Custom */
 .navbar .popover {
     width: 600px;
